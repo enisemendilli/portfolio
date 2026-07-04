@@ -1,0 +1,65 @@
+{
+  "projects": [
+    {
+      "id": "p-coffeeshop-01",
+      "title": "Aura Roast — Coffee Shop Identity",
+      "category": "coffeeshop_branding",
+      "description": "A complete brand identity for Aura Roast, a specialty coffee roastery. The project encompassed logo design, packaging, stationery, and environmental branding — all rooted in a warm, minimalist aesthetic that speaks to the craft of single-origin coffee.",
+      "images": ["/uploads/coffeeshop_branding.png"],
+      "year": "2025",
+      "featured": true,
+      "createdAt": "2025-09-01T00:00:00.000Z"
+    },
+    {
+      "id": "p-publishing-01",
+      "title": "Folio Press — Publishing House Branding",
+      "category": "publishing_branding",
+      "description": "Brand identity system for Folio Press, a modern literary publishing house. Designed a sophisticated visual language featuring forest green and gold foil, applied across hardcover books, stationery, and business collateral.",
+      "images": ["/uploads/publishing_branding.png"],
+      "year": "2025",
+      "featured": true,
+      "createdAt": "2025-06-15T00:00:00.000Z"
+    },
+    {
+      "id": "p-poster-01",
+      "title": "Moderne Formen — Exhibition Poster",
+      "category": "posters",
+      "description": "A bold Swiss-inspired typographic poster for a design and typography exhibition. High-contrast geometric composition featuring striking red and black elements, channelling the legacy of International Typographic Style.",
+      "images": ["/uploads/poster_design.png"],
+      "year": "2024",
+      "featured": true,
+      "createdAt": "2024-10-01T00:00:00.000Z"
+    },
+    {
+      "id": "p-bookcover-01",
+      "title": "The Invisible City — Book Cover",
+      "category": "bookcovers",
+      "description": "An artistic reimagining of Italo Calvino's classic. The cover distils the novel's themes of hidden architecture and dream-like urbanism into layered geometric structures dissolving into a hazy amber sky.",
+      "images": ["/uploads/bookcover_design.png"],
+      "year": "2024",
+      "featured": true,
+      "createdAt": "2024-08-20T00:00:00.000Z"
+    },
+    {
+      "id": "p-social-01",
+      "title": "Element Architects — Social Grid",
+      "category": "social_media",
+      "description": "A cohesive 9-post Instagram grid designed for Element Architects. Editorial photography of concrete structures paired with minimalist typography creates a premium brand narrative across every touchpoint.",
+      "images": ["/uploads/social_media_design.png"],
+      "year": "2025",
+      "featured": true,
+      "createdAt": "2025-03-10T00:00:00.000Z"
+    },
+    {
+      "id": "p-commerce-01",
+      "title": "AETERNA — E-Commerce UI",
+      "category": "internet_commerce",
+      "description": "A luxury fashion e-commerce interface designed for AETERNA. Sleek dark theme with gold accents, premium product cards, and editorial layout — crafted to elevate the digital shopping experience.",
+      "images": ["/uploads/internet_commerce_design.png"],
+      "year": "2026",
+      "featured": true,
+      "createdAt": "2026-01-15T00:00:00.000Z"
+    }
+  ],
+  "photos": []
+}
