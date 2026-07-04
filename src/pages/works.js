@@ -77,6 +77,16 @@ export const PROJECTS = [
     description: `<p>A collection of fictional and custom book cover designs focusing on typography and visual themes.</p>`,
     images: [],
   },
+  {
+    id: 'branding',
+    title: 'BRANDING',
+    titleHTML: 'Branding <em>Identity</em>',
+    role: 'Graphic Designer',
+    tag: '✦ design — branding',
+    description: `<p>Creative branding systems and designs for different cases.</p>`,
+    images: [],
+  },
+
 ];
 
 export async function renderWorks(projectId) {
