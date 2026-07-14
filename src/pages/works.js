@@ -12,6 +12,8 @@ export const PROJECTS = [
 <p>As the Art Director of the film, I was responsible for shaping its visual identity through set design, props, and narrative details. I designed key on-screen elements, including a fictional book cover and other visual attributes that supported the story's atmosphere and character world.</p>
 <p>My role also extended beyond the set. I designed a series of promotional posters and managed the film's social media presence, creating a cohesive visual direction that connected the film's narrative, production design, and public-facing identity.</p>`,
     images: [
+      '/assets/iyi-bir-sey/Instagram post - 48.png',
+      '/assets/iyi-bir-sey/Instagram post - 49.png',
       '/assets/iyi-bir-sey/filmbook.png',
       '/assets/iyi-bir-sey/Artboard 1_3-100.jpg',
       '/assets/iyi-bir-sey/Frame 20.png',
