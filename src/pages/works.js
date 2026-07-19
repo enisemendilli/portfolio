@@ -52,6 +52,7 @@ export const PROJECTS = [
     description: `<p>A collection of poster designs showcasing typography, composition, and visual storytelling.</p>`,
     images: [
       '/assets/posters/album cover-smooth deep house.png',
+      '/assets/posters/day 11.png',
       '/assets/posters/day 1.png',
       '/assets/posters/day 2.1.png',
       '/assets/posters/day 2.png',
@@ -86,7 +87,9 @@ export const PROJECTS = [
     role: 'Graphic Designer',
     tag: '✦ design — branding',
     description: `<p>Creative branding systems and designs for different cases.</p>`,
-    images: [],
+    images: [
+      '/assets/branding/NYHAVN  coffee & co Branding.png',
+    ],
   },
 
 ];
