@@ -64,6 +64,7 @@ export const PROJECTS = [
       '/assets/posters/Instagram post - 13.png',
       '/assets/posters/Instagram post - 44.png',
       '/assets/posters/Instagram post - 29.png',
+      '/assets/posters/Instagram post - 39.png',
     ],
   },
   {
