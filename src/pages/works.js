@@ -60,10 +60,7 @@ export const PROJECTS = [
       '/assets/posters/day 11.png',
       '/assets/posters/day 12.png',
       '/assets/posters/day 20.png',
-      '/assets/posters/Instagram post - 29.png',
-      '/assets/posters/Instagram post - 31.png',
       '/assets/posters/Instagram post - 39.png',
-      '/assets/posters/Instagram post - 44.png',
     ],
   },
   {
