@@ -1,5 +1,6 @@
 // ─── Home Page ──────────────────────────────────────────────────
 import { PROJECTS } from './works.js';
+import { renderSketchbook } from '../components/sketchbook.js';
 
 export function renderHome() {
   const page = document.getElementById('page-content');
@@ -47,6 +48,9 @@ export function renderHome() {
           <span class="hero-role-pill">visual storyteller</span>
         </div>
       </div>
+
+      <!-- Sketchbook -->
+      <div id="sketchbook-mount"></div>
 
       <!-- Projects -->
       <div class="section-block">
@@ -151,6 +155,12 @@ export function renderHome() {
 
     </div>
   `;
+
+  // Render sketchbook
+  const sbMount = document.getElementById('sketchbook-mount');
+  if (sbMount) {
+    renderSketchbook(sbMount);
+  }
 
   // Scroll animations
   const obs = new IntersectionObserver((entries) => {
