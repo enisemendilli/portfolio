@@ -136,6 +136,52 @@ body {
   padding: 80px 40px;
 }
 
+/* ── Hero Video ────────────────────────────────────────────────── */
+.hero-video-section {
+  position: relative;
+  width: calc(100% + 80px);
+  margin-left: -40px;
+  margin-top: -80px;
+  margin-bottom: 40px;
+  overflow: hidden;
+  border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+  background: #0a0a0a;
+}
+
+.hero-video {
+  width: 100%;
+  height: 70vh;
+  max-height: 600px;
+  min-height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-video-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    transparent 50%,
+    rgba(255, 255, 255, 0.6) 85%,
+    var(--bg) 100%
+  );
+  pointer-events: none;
+}
+
+/* ── Gallery Video Item ───────────────────────────────────────── */
+.gallery-video-item {
+  grid-column: 1 / -1;
+}
+
+.gallery-video-item video {
+  width: 100%;
+  max-height: 600px;
+  object-fit: contain;
+  border-radius: var(--radius);
+  background: #0a0a0a;
+}
+
 /* ── Hero ──────────────────────────────────────────────────────── */
 .hero-section {
   text-align: center;
@@ -1316,4 +1362,15 @@ body {
   .stats-row { flex-direction: column; }
   .nav-links { gap: 20px; }
   .nav-link { font-size: 0.72rem; }
+
+  .hero-video-section {
+    width: calc(100% + 40px);
+    margin-left: -20px;
+    margin-top: -80px;
+  }
+
+  .hero-video {
+    height: 50vh;
+    min-height: 220px;
+  }
 }

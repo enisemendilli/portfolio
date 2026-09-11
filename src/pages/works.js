@@ -63,15 +63,7 @@ export const PROJECTS = [
       '/assets/posters/Instagram post - 39.png',
     ],
   },
-  {
-    id: 'photography',
-    title: 'PHOTOGRAPHY',
-    titleHTML: 'Photography',
-    role: 'Photographer',
-    tag: '✧ photography — visual stories',
-    description: `<p>A curated collection of photographs capturing moments, textures, and perspectives through a personal lens.</p>`,
-    images: [],
-  },
+
   {
     id: 'illustrations',
     title: 'ILLUSTRATIONS',
@@ -79,7 +71,14 @@ export const PROJECTS = [
     role: 'Illustrator & Designer',
     tag: '★ design — illustrations',
     description: `<p>Creative illustrations and visual artworks exploring styles, textures, and digital drawing techniques.</p>`,
-    images: [],
+    images: [
+      '/assets/illustrations/POLARBEAR.PNG',
+      '/assets/illustrations/foxes.png',
+      '/assets/illustrations/IMG_6847.PNG',
+      '/assets/illustrations/IMG_6848 2.JPG',
+      '/assets/illustrations/IMG_6851.PNG',
+      '/assets/illustrations/IMG_6852.PNG',
+    ],
   },
   {
     id: 'book-covers',
@@ -88,7 +87,9 @@ export const PROJECTS = [
     role: 'Graphic Designer',
     tag: '❋ design — book covers',
     description: `<p>A collection of fictional and custom book cover designs focusing on typography and visual themes.</p>`,
-    images: [],
+    images: [
+      '/assets/book-covers/valley of the dolls.png',
+    ],
   },
   {
     id: 'branding',
@@ -99,6 +100,19 @@ export const PROJECTS = [
     description: `<p>Creative branding systems and designs for different cases.</p>`,
     images: [
       '/assets/branding/NYHAVN  coffee & co Branding.png',
+      '/assets/branding/MNV.png',
+    ],
+  },
+  {
+    id: 'multimedia',
+    title: 'MULTIMEDIA',
+    titleHTML: 'Multimedia',
+    role: 'Visual Artist',
+    tag: '✧ multimedia — visual poetry',
+    description: `<p>Imagination - Visual Poem</p>`,
+    images: [],
+    videos: [
+      '/assets/multimedia/imagination.mp4',
     ],
   },
 
@@ -130,6 +144,26 @@ export async function renderWorks(projectId) {
     </div>
   ` : '';
 
+  const videos = project.videos || [];
+  const totalWorks = project.images.length + videos.length;
+
+  // Build gallery items: images + videos
+  const imageItems = project.images.map((src, i) => `
+    <div class="gallery-grid-item" data-index="${i}">
+      <img src="${src}" alt="${project.title} ${i + 1}" loading="lazy" />
+    </div>
+  `).join('');
+
+  const videoItems = videos.map(src => `
+    <div class="gallery-grid-item gallery-video-item">
+      <video src="${src}" muted loop playsinline controls preload="metadata"></video>
+    </div>
+  `).join('');
+
+  const galleryContent = totalWorks > 0
+    ? imageItems + videoItems
+    : `<div style="grid-column: 1 / -1; padding: 60px 40px; text-align: center; border: 1.5px dashed var(--border-dark); border-radius: var(--radius); color: var(--text-soft); font-family: var(--font-doodle); font-size: 1.4rem;">Works coming soon! ~ ♡</div>`;
+
   page.innerHTML = `
     <div class="project-page">
       <a href="#home" class="back-link anim-fade-up">← back to portfolio</a>
@@ -143,19 +177,15 @@ export async function renderWorks(projectId) {
 
       ${igHeader}
 
-      <div class="gallery-label anim-fade-up">✦ gallery — ${project.images.length} works</div>
+      <div class="gallery-label anim-fade-up">✦ gallery — ${totalWorks} works</div>
       <div class="gallery-grid anim-fade-up">
-        ${project.images.length > 0 ? project.images.map((src, i) => `
-          <div class="gallery-grid-item" data-index="${i}">
-            <img src="${src}" alt="${project.title} ${i + 1}" loading="lazy" />
-          </div>
-        `).join('') : `<div style="grid-column: 1 / -1; padding: 60px 40px; text-align: center; border: 1.5px dashed var(--border-dark); border-radius: var(--radius); color: var(--text-soft); font-family: var(--font-doodle); font-size: 1.4rem;">Works coming soon! ~ ♡</div>`}
+        ${galleryContent}
       </div>
     </div>
   `;
 
-  // Lightbox
-  const items = page.querySelectorAll('.gallery-grid-item');
+  // Lightbox (images only)
+  const items = page.querySelectorAll('.gallery-grid-item:not(.gallery-video-item)');
   items.forEach(item => {
     item.addEventListener('click', () => {
       const idx = parseInt(item.dataset.index, 10);

@@ -7,6 +7,9 @@ dist/
 .DS_Store
 Thumbs.db
 
+# Large video files
+*.MOV
+
 # Logs
 npm-debug.log*
 yarn-debug.log*
