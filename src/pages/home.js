@@ -8,15 +8,12 @@ export function renderHome() {
   // Build project cards
   const projectCards = PROJECTS.map(p => {
     const thumb = p.images.length > 0 ? p.images[0] : '';
-    const videoThumb = !thumb && p.videos && p.videos.length > 0 ? p.videos[0] : '';
     return `
       <a href="#project/${p.id}" class="project-card anim-fade-up" style="display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center; padding: 20px;">
         ${thumb 
           ? `<img src="${thumb}" alt="${p.title}" loading="lazy" style="position: absolute; inset: 0;" />` 
-          : videoThumb
-            ? `<video src="${videoThumb}" muted loop playsinline autoplay preload="metadata" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;"></video>`
-            : `<div style="font-family: var(--font-doodle); font-size: 1.8rem; color: var(--pink); opacity: 0.65; line-height: 1.2;">${p.title}</div>
-               <div style="font-size: 0.68rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1.5px; margin-top: 6px; font-weight: 500;">coming soon ~</div>`
+          : `<div style="font-family: var(--font-doodle); font-size: 1.8rem; color: var(--pink); opacity: 0.65; line-height: 1.2;">${p.title}</div>
+             <div style="font-size: 0.68rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1.5px; margin-top: 6px; font-weight: 500;">coming soon ~</div>`
         }
         <div class="project-card-overlay">
           <div class="project-card-title">${p.title}</div>
