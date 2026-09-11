@@ -33,7 +33,7 @@ export function renderHome() {
       <div class="hero-video-section anim-fade-up">
         <video
           class="hero-video"
-          src="/assets/multimedia/imagination.mp4"
+          src="/assets/multimedia/hero-video.mp4"
           autoplay
           muted
           loop

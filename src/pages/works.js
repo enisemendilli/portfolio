@@ -102,19 +102,7 @@ export const PROJECTS = [
       '/assets/branding/NYHAVN  coffee & co Branding.png',
       '/assets/branding/MNV.png',
     ],
-  },
-  {
-    id: 'multimedia',
-    title: 'MULTIMEDIA',
-    titleHTML: 'Multimedia',
-    role: 'Visual Artist',
-    tag: '✧ multimedia — visual poetry',
-    description: `<p>Imagination - Visual Poem</p>`,
-    images: [],
-    videos: [
-      '/assets/multimedia/imagination.mp4',
-    ],
-  },
+  }
 
 ];
 

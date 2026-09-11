@@ -9,6 +9,8 @@ Thumbs.db
 
 # Large video files
 *.MOV
+*.MP4
+!*hero-video.mp4
 
 # Logs
 npm-debug.log*
