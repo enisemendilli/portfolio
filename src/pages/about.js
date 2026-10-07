@@ -8,7 +8,7 @@ export function renderAbout() {
 
         <div class="about-image-col anim-fade-up">
           <div class="profile-placeholder" style="border: none; overflow: hidden; background: none;">
-            <img src="/assets/about%20me%20photo/IMG_0113.jpg" alt="Enise Mendilli" style="width: 100%; height: 100%; object-fit: cover; border-radius: var(--radius-lg); border: 1px solid var(--border);" />
+            <img src="./assets/about%20me%20photo/IMG_0113.jpg" alt="Enise Mendilli" style="width: 100%; height: 100%; object-fit: cover; border-radius: var(--radius-lg); border: 1px solid var(--border);" />
           </div>
         </div>
 
