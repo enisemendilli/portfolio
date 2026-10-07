@@ -6,6 +6,8 @@ dist/
 # OS Files
 .DS_Store
 Thumbs.db
+Icon?
+Icon*
 
 # Large video files
 *.MOV

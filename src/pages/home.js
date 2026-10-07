@@ -5,9 +5,9 @@ import { renderSketchbook } from '../components/sketchbook.js';
 export function renderHome() {
   const page = document.getElementById('page-content');
 
-  // Build project cards
+  // Build project cards — use custom cover image if available
   const projectCards = PROJECTS.map(p => {
-    const thumb = p.images.length > 0 ? p.images[0] : '';
+    const thumb = p.coverImage || (p.images.length > 0 ? p.images[0] : '');
     return `
       <a href="#project/${p.id}" class="project-card anim-fade-up" style="display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center; padding: 20px;">
         ${thumb 
