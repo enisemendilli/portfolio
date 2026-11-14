@@ -4,33 +4,41 @@ import { openLightbox } from '../components/lightbox.js';
 export const PROJECTS = [
   {
     id: 'iyi-bir-sey',
+    number: '01',
+    year: '2026',
+    category: 'Art Direction',
     title: 'SOMETHING GOOD',
     titleHTML: 'Something Good / <em>İyi Bir Şey</em>',
     role: 'Art Director',
-    tag: '✦ film — art direction',
+    tag: 'Film — Art Direction & Visual Identity',
+    shortDescription: 'Art direction and comprehensive visual identity for a narrative short film exploring creative frustration, featuring custom prop design, promotional posters, and social media direction.',
+    coverImage: './assets/iyi-bir-sey/coverr.jpg',
     description: `<p>Something Good / İyi Bir Şey is a short film about Burak, a young writer navigating creative frustration, ambition, and the feeling of being unseen by the industry. As he searches for the perfect ending to his new book, he is accompanied by Melis, the main character of his own story.</p>
 <p>As the Art Director of the film, I was responsible for shaping its visual identity through set design, props, and narrative details. I designed key on-screen elements, including a fictional book cover and other visual attributes that supported the story's atmosphere and character world.</p>
-<p>My role also extended beyond the set. I designed a series of promotional posters and managed the film's social media presence, creating a cohesive visual direction that connected the film's narrative, production design, and public-facing identity.</p>`,
+<p>My role also extended beyond the set: I designed a series of promotional posters and managed the film's social media presence, creating a cohesive visual direction connecting the film's narrative, production design, and public-facing identity.</p>`,
     images: [
-      './assets/iyi-bir-sey/Instagram post - 48.png',
-      './assets/iyi-bir-sey/Instagram post - 49.png',
-      './assets/iyi-bir-sey/filmbook.png',
-      './assets/iyi-bir-sey/Artboard 1_3-100.jpg',
-      './assets/iyi-bir-sey/Frame 20.png',
-      './assets/iyi-bir-sey/Instagram post - 33.png',
+      './assets/iyi-bir-sey/coverr.jpg',
       './assets/iyi-bir-sey/POSTER 3 - INSTAGRAM -TR.png',
+      './assets/iyi-bir-sey/Instagram post - 65.png',
+      './assets/iyi-bir-sey/Instagram post - 67.png',
+      './assets/iyi-bir-sey/Instagram post - 33.png',
+      './assets/iyi-bir-sey/Artboard 1_3-100.jpg',
     ],
   },
   {
     id: 'gallery-projects',
+    number: '02',
+    year: '2025',
+    category: 'Exhibition',
     title: 'GALLERY PROJECTS',
     titleHTML: 'Gallery <em>Projects</em>',
     role: 'SMM Manager & Exhibition Coordinator',
-    tag: '✦ gallery — social media & production',
+    tag: 'Gallery — Exhibition Production & Social Media',
+    shortDescription: 'Exhibition management, curatorial support, and visual documentation at Esentai Gallery, including the Summer Art Fair, Girlhood exhibition, and an international artist residency.',
     coverImage: './assets/gallery projects/chairs.jpg',
     layout: 'gallery-sections',
     description: `<p>At Esentai Gallery, I worked across social media management, exhibition production, and event organization, contributing to the Summer Art Fair 2025 and the Girlhood exhibition. My role included creating visual content, coordinating with press and media partners, supporting exhibition openings, and organizing workshops, screenings, and artist events.</p>
-<p>I also contributed to Juan Saliquet's (a Spanish artist and photographer) "Archaeology of a City: Almaty" residency, leading its social media documentation, developing the Open Call campaign, supporting press outreach, and participating in the project's research and exhibition process.</p>`,
+<p>I also contributed to Juan Saliquet's (Spanish artist and photographer) "Archaeology of a City: Almaty" residency, leading its social media documentation, developing the Open Call campaign, supporting press outreach, and participating in the project's research and exhibition process.</p>`,
     sections: [
       {
         title: 'Archaeology of the City',
@@ -74,33 +82,18 @@ export const PROJECTS = [
     ],
   },
   {
-    id: 'samy-bakery',
-    title: 'SAMY BAKERY',
-    titleHTML: 'SAMY <em>Bakery</em>',
-    role: 'Graphic Designer',
-    tag: '✿ design — branding & social media',
-    coverImage: './assets/SAMY Bakery/Slide 16_9 - 1.png',
-    layout: 'carousel',
-    description: `<p>Visual identity and social media design for SAMY Bakery.</p>`,
-    images: [
-      './assets/SAMY Bakery/Slide 16_9 - 1.png',
-      './assets/SAMY Bakery/Slide 16_9 - 2.png',
-      './assets/SAMY Bakery/Slide 16_9 - 3.png',
-      './assets/SAMY Bakery/Slide 16_9 - 4.png',
-      './assets/SAMY Bakery/Slide 16_9 - 5.png',
-      './assets/SAMY Bakery/Slide 16_9 - 6.png',
-      './assets/SAMY Bakery/Slide 16_9 - 7.png',
-    ],
-  },
-  {
-    id: 'serac',
-    title: 'SERAC',
-    titleHTML: 'SERAC <em>Campaign</em>',
+    id: 'fashion-sketches',
+    number: '03',
+    year: '2026',
+    category: 'Fashion',
+    title: 'FASHION SKETCHES',
+    titleHTML: 'Fashion <em>Sketches</em>',
     role: 'Art Director & Illustrator',
-    tag: '★ campaign — art direction & illustration',
+    tag: 'Fashion — Sketches & Art Direction',
+    shortDescription: 'Conceptual fashion sketches and editorial campaign exploring sculptural footwear silhouettes, hand-drawn digital illustration, and high-fashion art direction.',
     coverImage: './assets/campaign design/SERAC/SLIDE1.png',
     layout: 'carousel',
-    description: `<p>SERAC campaign is my passion project which focuses on creating hand-drawn digital illustrations and taking out a full campaign design for a fashion brand with full creative and art direction (in progress).</p>`,
+    description: `<p>Fashion Sketches is an editorial fashion concept focusing on hand-drawn digital illustrations and campaign art direction for a sculptural footwear collection, exploring materials, organic silhouettes, and high-contrast editorial composition.</p>`,
     images: [
       './assets/campaign design/SERAC/SLIDE1.png',
       './assets/campaign design/SERAC/SLIDE2.jpg',
@@ -112,14 +105,64 @@ export const PROJECTS = [
     ],
   },
   {
+    id: 'branding',
+    number: '04',
+    year: '2026',
+    category: 'Branding',
+    title: 'BRANDING',
+    titleHTML: 'Branding <em>Systems</em>',
+    role: 'Brand Designer',
+    tag: 'Design — Visual Identity Systems',
+    shortDescription: 'Brand identity and packaging systems across SAMY Bakery packaging, NYHAVN Coffee & Co branding, and MNV studio marks.',
+    coverImage: './assets/branding/samy brand.png',
+    description: `<p>Visual identity systems and brand design explorations across packaging, coffee culture, and studio identity. Includes the complete identity and packaging aesthetic for SAMY Bakery, NYHAVN Coffee & Co, and MNV.</p>`,
+    images: [
+      './assets/branding/samy brand.png',
+      './assets/branding/NYHAVN  coffee & co Branding.png',
+      './assets/branding/MNV.png',
+    ],
+  },
+  {
+    id: 'designs',
+    number: '05',
+    year: '2026',
+    category: 'Editorial',
+    title: 'DESIGNS',
+    titleHTML: 'Designs <em>& Posters</em>',
+    role: 'Graphic Designer',
+    tag: 'Design — Editorial Zines & Posters',
+    shortDescription: 'Editorial zine branding, typographical systems, and experimental visual designs exploring composition, print layouts, and graphic aesthetics.',
+    coverImage: './assets/designs/zinebrand.png',
+    description: `<p>A curated collection of graphic designs, zine branding, and typographic posters exploring rhythm, minimalist grid systems, and expressive visual storytelling across music and editorial concepts.</p>`,
+    images: [
+      './assets/designs/zinebrand.png',
+      './assets/designs/day 1.png',
+      './assets/designs/day 2.1.png',
+      './assets/designs/day 3.1.png',
+      './assets/designs/day 5.1.png',
+      './assets/designs/day 12.png',
+    ],
+  },
+  {
     id: 'bargello',
+    number: '06',
+    year: '2026',
+    category: 'Social Media',
     title: 'BARGELLO',
     titleHTML: 'Bargello <em>Kazakhstan</em>',
     role: 'Social Media Manager & Designer',
-    tag: '♡ social media — management & design',
-    igHandle: '@bargello_kazakhstan',
-    description: `<p>Instagram feed design, content strategy, and visual identity management for Bargello Kazakhstan. Below are the visuals that I have created for the brand.</p>`,
+    tag: 'Social Media — Strategy & Feed Design',
+    shortDescription: 'Feed design, visual identity management, and bilingual content strategy for perfume retailer Bargello Kazakhstan, driving engagement and brand prestige.',
+    coverImage: './assets/bargello/Instagram post - 71.png',
+    description: `<p>Instagram feed design, content strategy, and visual identity management for Bargello Kazakhstan. Designed a clean, engaging bilingual social grid aligned with luxury fragrance branding.</p>`,
     images: [
+      './assets/bargello/Instagram post - 71.png',
+      './assets/bargello/3 mart post 2.png',
+      './assets/bargello/Instagram post - 65.png',
+      './assets/bargello/Instagram post - 66.png',
+      './assets/bargello/Instagram post - 67.png',
+      './assets/bargello/Instagram post - 78.png',
+      './assets/bargello/Instagram post - 88.png',
       './assets/bargello/52675EB9-2385-4C9E-A5F8-319C6E6F45C3.png',
       './assets/bargello/5F9F099C-28D6-4EA5-9873-D3B11934B520.png',
       './assets/bargello/7E8F329F-9467-4306-B821-3E6EBB1AD69C.png',
@@ -130,40 +173,23 @@ export const PROJECTS = [
       './assets/bargello/Instagram post - 40.png',
       './assets/bargello/Instagram post - 41.png',
       './assets/bargello/Instagram post - 47.png',
-      './assets/bargello/Instagram post - 71.png',
     ],
   },
-  {
-    id: 'poster-designs',
-    title: 'POSTER DESIGNS',
-    titleHTML: 'Poster <em>Designs</em>',
-    role: 'Graphic Designer',
-    tag: '✿ design — posters',
-    description: `<p>A collection of poster designs showcasing typography, composition, and visual storytelling.</p>`,
-    images: [
-      './assets/posters/album cover-smooth deep house.png',
-      './assets/posters/day 1.png',
-      './assets/posters/day 2.png',
-      './assets/posters/day 2.1.png',
-      './assets/posters/day 3.1.png',
-      './assets/posters/day 5.1.png',
-      './assets/posters/day 11.png',
-      './assets/posters/day 12.png',
-      './assets/posters/day 20.png',
-      './assets/posters/Instagram post - 39.png',
-    ],
-  },
-
   {
     id: 'illustrations',
+    number: '07',
+    year: '2025',
+    category: 'Illustration',
     title: 'ILLUSTRATIONS',
-    titleHTML: 'Illustrations',
+    titleHTML: 'Illustrations <em>& Artworks</em>',
     role: 'Illustrator & Designer',
-    tag: '★ design — illustrations',
-    description: `<p>Creative illustrations and visual artworks exploring styles, textures, and digital drawing techniques.</p>`,
+    tag: 'Art — Digital Illustration & Drawing',
+    shortDescription: 'Personal illustrations exploring character forms, textural rendering, wildlife, and digital drawing techniques.',
+    coverImage: './assets/illustrations/foxes.png',
+    description: `<p>Creative illustrations and visual artworks exploring styles, organic textures, animal studies, and digital brush techniques.</p>`,
     images: [
-      './assets/illustrations/POLARBEAR.PNG',
       './assets/illustrations/foxes.png',
+      './assets/illustrations/POLARBEAR.PNG',
       './assets/illustrations/IMG_6847.PNG',
       './assets/illustrations/IMG_6848 2.JPG',
       './assets/illustrations/IMG_6851.PNG',
@@ -172,29 +198,30 @@ export const PROJECTS = [
   },
   {
     id: 'book-covers',
+    number: '08',
+    year: '2025',
+    category: 'Editorial',
     title: 'BOOK COVERS',
     titleHTML: 'Book <em>Covers</em>',
     role: 'Graphic Designer',
-    tag: '❋ design — book covers',
-    description: `<p>A collection of fictional and custom book cover designs focusing on typography and visual themes.</p>`,
+    tag: 'Design — Editorial Book Covers',
+    shortDescription: 'Conceptual cover design for classic literature featuring bespoke typographic treatment and moody, high-contrast imagery.',
+    coverImage: './assets/book-covers/valley of the dolls.png',
+    description: `<p>Fictional and custom book cover designs focusing on title typography, atmosphere, and literary narrative expression.</p>`,
     images: [
       './assets/book-covers/valley of the dolls.png',
+      './assets/book-covers/filmbook.png',
     ],
   },
-  {
-    id: 'branding',
-    title: 'BRANDING',
-    titleHTML: 'Branding <em>Identity</em>',
-    role: 'Graphic Designer',
-    tag: '✦ design — branding',
-    description: `<p>Creative branding systems and designs for different cases.</p>`,
-    images: [
-      './assets/branding/NYHAVN  coffee & co Branding.png',
-      './assets/branding/MNV.png',
-    ],
-  }
-
 ];
+
+// Alias lookup for legacy links
+const ALIASES = {
+  'serac': 'fashion-sketches',
+  'poster-designs': 'designs',
+  'posters': 'designs',
+  'samy-bakery': 'branding',
+};
 
 /* ── Carousel helper ─────────────────────────────────────────── */
 function renderCarousel(images, carouselId) {
@@ -254,10 +281,6 @@ function initCarousel(container, carouselId) {
 /* ── Section carousel (for Gallery Projects) ────────────────── */
 function renderSectionCarousel(section, sectionIdx) {
   const carouselId = `section-carousel-${sectionIdx}`;
-  const allMedia = [
-    ...section.images.map(src => ({ type: 'image', src })),
-    ...(section.videos || []).map(src => ({ type: 'video', src })),
-  ];
 
   return `
     <div class="gallery-section anim-fade-up">
@@ -269,19 +292,16 @@ function renderSectionCarousel(section, sectionIdx) {
         <button class="carousel-arrow carousel-arrow-left" data-dir="-1" aria-label="Previous">‹</button>
         <div class="carousel-track-wrapper">
           <div class="carousel-track">
-            ${allMedia.map((item, i) => `
+            ${section.images.map((src, i) => `
               <div class="carousel-slide${i === 0 ? ' active' : ''}" data-index="${i}">
-                ${item.type === 'video'
-                  ? `<video src="${item.src}" controls playsinline preload="metadata" style="width:100%;height:100%;object-fit:contain;border-radius:var(--radius);"></video>`
-                  : `<img src="${item.src}" alt="${section.title} ${i + 1}" loading="lazy" />`
-                }
+                <img src="${src}" alt="${section.title} ${i + 1}" loading="lazy" />
               </div>
             `).join('')}
           </div>
         </div>
         <button class="carousel-arrow carousel-arrow-right" data-dir="1" aria-label="Next">›</button>
         <div class="carousel-dots">
-          ${allMedia.map((_, i) => `<span class="carousel-dot${i === 0 ? ' active' : ''}" data-index="${i}"></span>`).join('')}
+          ${section.images.map((_, i) => `<span class="carousel-dot${i === 0 ? ' active' : ''}" data-index="${i}"></span>`).join('')}
         </div>
       </div>
     </div>
@@ -296,29 +316,19 @@ export async function renderWorks(projectId) {
     return;
   }
 
-  const project = PROJECTS.find(p => p.id === projectId);
+  const resolvedId = ALIASES[projectId] || projectId;
+  const project = PROJECTS.find(p => p.id === resolvedId);
 
   if (!project) {
-    page.innerHTML = `<div class="project-page"><h1>Project not found</h1><a href="#home" class="back-link">← back home</a></div>`;
+    page.innerHTML = `<div class="project-page"><h1>Project not found</h1><a href="#home" class="back-link">← Back</a></div>`;
     return;
   }
-
-  // IG header for Bargello
-  const igHeader = project.igHandle ? `
-    <div class="ig-mini-header">
-      <div class="ig-mini-avatar">B</div>
-      <div>
-        <div class="ig-mini-handle">${project.igHandle}</div>
-        <div class="ig-mini-sub">Instagram Feed Design</div>
-      </div>
-    </div>
-  ` : '';
 
   // ── Gallery Sections layout (Gallery Projects) ────────────────
   if (project.layout === 'gallery-sections') {
     page.innerHTML = `
       <div class="project-page">
-        <a href="#home" class="back-link anim-fade-up">← back to portfolio</a>
+        <a href="#home" class="back-link anim-fade-up">← Back</a>
 
         <div class="project-header anim-fade-up">
           <div class="project-tag">${project.tag}</div>
@@ -346,13 +356,13 @@ export async function renderWorks(projectId) {
     return;
   }
 
-  // ── Single Carousel layout (SAMY, SERAC) ──────────────────────
+  // ── Single Carousel layout (Fashion Sketches, etc.) ─────────
   if (project.layout === 'carousel') {
     const carouselId = `project-carousel-${project.id}`;
 
     page.innerHTML = `
       <div class="project-page">
-        <a href="#home" class="back-link anim-fade-up">← back to portfolio</a>
+        <a href="#home" class="back-link anim-fade-up">← Back</a>
 
         <div class="project-header anim-fade-up">
           <div class="project-tag">${project.tag}</div>
@@ -361,7 +371,7 @@ export async function renderWorks(projectId) {
           <div class="project-description">${project.description}</div>
         </div>
 
-        <div class="gallery-label anim-fade-up">✦ slides — ${project.images.length} works</div>
+        <div class="gallery-label anim-fade-up">Slides — ${project.images.length} works</div>
         <div class="anim-fade-up">
           ${renderCarousel(project.images, carouselId)}
         </div>
@@ -383,7 +393,7 @@ export async function renderWorks(projectId) {
   // ── Default grid layout ───────────────────────────────────────
   page.innerHTML = `
     <div class="project-page">
-      <a href="#home" class="back-link anim-fade-up">← back to portfolio</a>
+      <a href="#home" class="back-link anim-fade-up">← Back</a>
 
       <div class="project-header anim-fade-up">
         <div class="project-tag">${project.tag}</div>
@@ -392,15 +402,13 @@ export async function renderWorks(projectId) {
         <div class="project-description">${project.description}</div>
       </div>
 
-      ${igHeader}
-
-      <div class="gallery-label anim-fade-up">✦ gallery — ${project.images.length} works</div>
+      <div class="gallery-label anim-fade-up">Gallery — ${project.images.length} works</div>
       <div class="gallery-grid anim-fade-up">
         ${project.images.length > 0 ? project.images.map((src, i) => `
           <div class="gallery-grid-item" data-index="${i}">
             <img src="${src}" alt="${project.title} ${i + 1}" loading="lazy" />
           </div>
-        `).join('') : `<div style="grid-column: 1 / -1; padding: 60px 40px; text-align: center; border: 1.5px dashed var(--border-dark); border-radius: var(--radius); color: var(--text-soft); font-family: var(--font-doodle); font-size: 1.4rem;">Works coming soon! ~ ♡</div>`}
+        `).join('') : `<div class="gallery-empty">Works coming soon</div>`}
       </div>
     </div>
   `;

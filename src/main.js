@@ -1,5 +1,6 @@
 // ─── Main Entry Point ───────────────────────────────────────────
 import { renderNav } from './components/nav.js';
+import { renderFooter } from './components/footer.js';
 import { renderHome } from './pages/home.js';
 import { renderAbout } from './pages/about.js';
 import { renderWorks } from './pages/works.js';
@@ -9,7 +10,7 @@ const routes = {
   '': renderHome,
   home: renderHome,
   about: renderAbout,
-  works: renderWorks,
+  works: renderHome,
 };
 
 let currentRoute = '';
@@ -37,7 +38,7 @@ async function navigateTo(route) {
   // Fade out
   if (pageContent.children.length > 0) {
     pageContent.classList.add('page-exit');
-    await new Promise(r => setTimeout(r, 300));
+    await new Promise(r => setTimeout(r, 250));
   }
 
   pageContent.innerHTML = '';
@@ -47,6 +48,7 @@ async function navigateTo(route) {
   currentRoute = route.startsWith('project/') ? 'project' : route;
 
   renderNav(currentRoute);
+  renderFooter();
 
   // Scroll to top
   window.scrollTo(0, 0);
@@ -59,7 +61,7 @@ async function navigateTo(route) {
   setTimeout(() => {
     pageContent.classList.remove('page-enter', 'page-enter-active');
     isTransitioning = false;
-  }, 400);
+  }, 350);
 }
 
 // ─── Bootstrap ──────────────────────────────────────────────────
